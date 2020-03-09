@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="protfolio">
+    <section class="portfolio">
       <h1>Portfolio</h1>
       <p>These are suppose to be sample projects</p>
       <div class="container">
@@ -83,7 +83,7 @@ export default {
 };
 </script>
 <style scoped>
-.protfolio {
+.portfolio {
   background-color: #34345238;
   padding-top: 8%;
   padding-bottom: 15%;
