@@ -19,11 +19,11 @@ export default {
 }
 </script>
 <style lang="css" scoped>
-    .section{
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-    #picofme{
-        width: 250px;
-    }
+.section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#picofme{
+    width: 250px;
+}
 </style>
