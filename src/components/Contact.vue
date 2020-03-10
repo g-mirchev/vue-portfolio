@@ -18,3 +18,26 @@
         </button>
     </div>
 </template>
+<script lang="ts">
+export default{
+    data(){
+        return {
+            contact:{
+                email:'',
+                message:''
+            }
+        }
+    },
+
+    methods:{
+        submit(){
+            //validating the form
+            if(this.contact.email !="" && this.contact.message !=""){
+                //send details to email
+            }else{
+                alert("All fields are required");
+            }
+        }
+    }
+}
+</script>
