@@ -2,75 +2,32 @@
   <div>
     <section class="portfolio">
       <h1>Portfolio</h1>
-      <p>These are suppose to be sample projects</p>
+      <p>These are some of my sample projects</p>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-head">
-                <img
-                  alt="Vue logo"
-                  class="rounded-circle img-custome"
-                  src="https://www.wetechnology.cz/wp-content/uploads/2017/02/uxui.jpg"
-                />
-                <h2>web project</h2>
+          <!-- Projects go here -->
+          <div v-for="project in projects" :key="project.id" class="col-md-4">
+              <div class="card">
+                  <div class="card-head">
+                  <img
+                      alt="Vue logo"
+                      class="rounded-circle img-custome myprojectimage"
+                      src=${project.imageurl}> <!-- image url -->
+                  <h2 class=myprojectname>
+                    {{project.name}} <!-- Title goes here -->
+                  </h2>
+                  </div>
+                  <hr />
+                  <div class="card-body">
+                  <p class="myprojectdescribtion">
+                    {{project.describtion}} <!-- Describtion goes here -->
+                  </p>
+                  <button type="button" class="btn btn-outline-secondary">
+                      Github Repo
+                  </button>
+                  </div>
               </div>
-              <hr />
-              <div class="card-body">
-                <p>
-                  Donec sed odio dui.
-                  Etiam porta sem malesuada magna mollis euismod.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Morbi leo risus, porta ac consectetur ac,
-                  vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-                <button type="button" class="btn btn-outline-secondary">More</button>
-              </div>
-            </div>
-            <br />
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-head">
-                <img
-                  alt="Vue logo"
-                  class="rounded-circle img-custome"
-                  src="https://i.pinimg.com/originals/4a/70/56/4a70563234301578c158dc142384a1c3.png"
-                />
-                <h2>web project</h2>
-              </div>
-              <hr />
-              <div class="card-body">
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-                <button type="button" class="btn btn-outline-secondary">More</button>
-              </div>
-            </div>
-            <br />
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-head">
-                <img
-                  alt="Vue logo"
-                  class="rounded-circle img-custome"
-                  src="https://cdn.mos.cms.futurecdn.net/wH5y2PkWhCxqKBje8rBp5e.jpg"
-                />
-                <h2>web project</h2>
-              </div>
-              <hr />
-              <div class="card-body">
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-                </p>
-                <button type="button" class="btn btn-outline-secondary">More</button>
-              </div>
-            </div>
+          <br />
           </div>
         </div>
       </div>
@@ -78,9 +35,23 @@
   </div>
 </template>
 <script>
+import axios from "axios";
+
 export default {
-  name: "Portfolio"
-};
+  name: "Portfolio",
+  data() {
+    return {
+      projects: []
+    };
+  },
+  methods: {
+    getProjects() {
+      axios
+        .get("projects.json")
+        .then(response => (this.projects = response.data));
+    }
+  }
+}
 </script>
 <style scoped>
 .portfolio {
