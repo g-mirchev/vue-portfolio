@@ -1,22 +1,20 @@
 <template>
   <div id="app">
     <navigation/>
-    <lander/>
-    <portfolio/>
+    <router-view></router-view>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Navigation from './components/includes/Navigation.vue'
-import Lander from './components/Lander.vue'
-import Portfolio from './components/Portfolio.vue'
+import Footer from './components/includes/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Navigation,
-    Lander,
-    Portfolio
+    Footer
   }
 }
 </script>
