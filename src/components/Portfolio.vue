@@ -10,9 +10,8 @@
               <div class="card">
                   <div class="card-head">
                   <img
-                      alt="Vue logo"
                       class="rounded-circle img-custome myprojectimage"
-                      src=${project.imageurl}> <!-- image url -->
+                      :src="project.imageurl"> <!-- image url -->
                   <h2 class=myprojectname>
                     {{project.name}} <!-- Title goes here -->
                   </h2>
@@ -44,12 +43,10 @@ export default {
       projects: []
     };
   },
-  methods: {
-    getProjects() {
-      axios
-        .get("projects.json")
-        .then(response => (this.projects = response.data));
-    }
+  created() {
+    axios
+      .get('http://localhost:8080/projects.json')
+      .then(response =>  (this.projects = response.data));
   }
 }
 </script>
