@@ -10,7 +10,7 @@
               <div class="card">
                   <div class="card-head">
                   <img
-                      class="rounded-circle img-custome myprojectimage"
+                      class="img-custome myprojectimage"
                       :src="project.imageurl"> <!-- image url -->
                   <h2 class=myprojectname>
                     {{project.name}} <!-- Title goes here -->
@@ -21,9 +21,9 @@
                   <p class="myprojectdescribtion">
                     {{project.describtion}} <!-- Describtion goes here -->
                   </p>
-                  <button type="button" class="btn btn-outline-secondary">
-                      Github Repo
-                  </button>
+                  <form :action="project.github">
+                    <input type="submit" class="btn btn-outline-secondary" value="Repository" />
+                  </form>
                   </div>
               </div>
           <br />
@@ -53,13 +53,14 @@ export default {
 <style scoped>
 .portfolio {
   background-color: #34345238;
-  padding-top: 8%;
-  padding-bottom: 15%;
+  padding-top: 5%;
+  padding-bottom: 10%;
   /* padding:15% */
 }
 .img-custome {
-  width: 140px;
+  width: 250px;
   height: 140px;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 </style>
