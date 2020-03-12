@@ -8,7 +8,7 @@
             </div>
             <div class="form-group">
                 <textarea class="form-control"
-                    v-model="contact.message" rows="3" placeholder="Sending email's isn't possible yet">
+                    v-model="contact.message" rows="3" placeholder="Sending emails isn't possible yet">
                 </textarea>
             </div>
         </form>
