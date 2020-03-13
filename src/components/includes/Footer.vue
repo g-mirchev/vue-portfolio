@@ -16,7 +16,7 @@
                     <h5>Resources</h5>
                     <ul class="list-unstyled text-small">
                         <li><a class="text-muted" href="https://codesource.io/building-a-portfolio-website-with-vue-and-bootstrap/">Portfolio tutorial</a></li>
-                        <li><a class="text-muted" href="https://www.w3schools.com/bootstrap4/">Bootstrap 4 tutorial</a></li>
+                        <li><a class="text-muted" href="https://www.w3schools.com/bootstrap">Bootstrap 3 tutorial</a></li>
                         <li><a class="text-muted" href="https://css-tricks.com/intro-to-vue-1-rendering-directives-events/">Intro to Vue.JS</a></li>
                         <li><a class="text-muted" href="https://css-tricks.com/intro-to-vue-2-components-props-slots/">Intro to Vue.JS 2</a></li>
                     </ul>
