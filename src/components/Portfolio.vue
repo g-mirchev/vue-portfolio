@@ -7,26 +7,7 @@
         <div class="row">
           <!-- Projects go here -->
           <div v-for="project in projects" :key="project.id" class="col-md-4">
-              <div class="card">
-                  <div class="card-head">
-                  <img
-                      class="img-custome myprojectimage"
-                      :src="project.imageurl"> <!-- image url -->
-                  <h2 class=myprojectname>
-                    {{project.name}} <!-- Title goes here -->
-                  </h2>
-                  </div>
-                  <hr />
-                  <div class="card-body">
-                  <p class="myprojectdescribtion">
-                    {{project.describtion}} <!-- Describtion goes here -->
-                  </p>
-                  <form :action="project.github">
-                    <input type="submit" class="btn btn-outline-secondary" value="Repository" />
-                  </form>
-                  </div>
-              </div>
-          <br />
+            <PCard :project="project"></PCard>
           </div>
         </div>
       </div>
@@ -35,9 +16,11 @@
 </template>
 <script>
 import axios from "axios";
+import PCard from "./PCard"
 
 export default {
   name: "Portfolio",
+  components: {PCard},
   data() {
     return {
       projects: []
@@ -45,10 +28,10 @@ export default {
   },
   created() {
     axios
-      .get('http://localhost:8080/projects.json')
-      .then(response =>  (this.projects = response.data));
+      .get("http://localhost:8080/projects.json")
+      .then(response => (this.projects = response.data));
   }
-}
+};
 </script>
 <style scoped>
 .portfolio {
@@ -56,11 +39,5 @@ export default {
   padding-top: 5%;
   padding-bottom: 10%;
   /* padding:15% */
-}
-.img-custome {
-  width: 250px;
-  height: 140px;
-  margin-top: 15px;
-  margin-bottom: 10px;
 }
 </style>
