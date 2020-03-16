@@ -11,7 +11,7 @@
             </h3>
           </div>
           <div class="text-right locationdate">
-            <h5>Southampton, United kingdom</h5>
+            <h5>Southampton, United Kingdom</h5>
             <p>Oct 2015 - Jun 2019</p>
           </div>
         </div>
