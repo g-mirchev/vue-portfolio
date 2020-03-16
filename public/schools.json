@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "BSc Computer Science",
+    "name": "University of Southampton",
+    "location": "Southampton, United Kingdom",
+    "date_started": "Oct 2015",
+    "date_finished": "Jun 2019",
+    "about": "This course opened my eyes to the various possibilities that the world of computer science has to offer. It sparked my passion for object oriented programming, game and web development. These years gave me the knowledge I needed to start my career as a software / web developer as well as the oportunity to meet and work with like-minded individuals.",
+    "achievements": [
+      {
+        "id": "1",
+        "text": "Modeling the behavior of fair playout protocols for peer-to-peer multiplayer games in Event-B (individual project)"
+      },
+      {
+        "id": "2",
+        "text": "Learning C# for Unity in under a week"
+      },
+      {
+        "id": "3",
+        "text": " Learning enough PHP in order to secure a website in under a week."
+      },
+      {
+        "id": "4",
+        "text": "Implementing basic search algorithms to solve a tiles puzzle."
+      }
+    ]
+  }
+]
