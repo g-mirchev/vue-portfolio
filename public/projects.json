@@ -1,23 +1,23 @@
 [
-    {
-        "id" : "1",
-        "name" : "Menu Page",
-        "describtion" : "Menu Page I built using HTML, CSS and vanilla Java Script",
-        "imageurl" : "https://i.imgur.com/YQdQIAR.png",
-        "github" : "https://github.com/g-mirchev/Menu-Page"
-    },
-    {
-        "id" : "2",
-        "name" : "Run Rolly Run",
-        "describtion" : "A game Subway Surfer style game I built using Unity engine and C# that uses procedural generation to generate the terrain and obstacles.",
-        "imageurl" : "https://i.imgur.com/uVPgqMY.png",
-        "github" : "https://github.com/g-mirchev/Run-Rolly-Run"
-    },
-    {
-        "id" : "3",
-        "name" : "A Tailor's Tale: The Shoemaker",
-        "describtion" : "A story game I made with a branching narrative and multiple endings, using Unity and C#. ",
-        "imageurl" : "https://i.imgur.com/jQgWQKU.png",
-        "github" : "https://github.com/g-mirchev/A-Tailor-s-Tale-of-Shoemaking"
-    }
+  {
+    "id": "1",
+    "name": "Menu Page",
+    "describtion": "Menu Page I built using HTML, CSS and vanilla Java Script",
+    "imageurl": "https://i.imgur.com/YQdQIAR.png",
+    "github": "https://github.com/g-mirchev/Menu-Page"
+  },
+  {
+    "id": "2",
+    "name": "Run Rolly Run",
+    "describtion": "A game Subway Surfer style game I built using Unity engine and C# that uses procedural generation to generate the terrain and obstacles.",
+    "imageurl": "https://i.imgur.com/uVPgqMY.png",
+    "github": "https://github.com/g-mirchev/Run-Rolly-Run"
+  },
+  {
+    "id": "3",
+    "name": "A Tailor's Tale: The Shoemaker",
+    "describtion": "A story game I made with a branching narrative and multiple endings, using Unity and C#. ",
+    "imageurl": "https://i.imgur.com/jQgWQKU.png",
+    "github": "https://github.com/g-mirchev/A-Tailor-s-Tale-of-Shoemaking"
+  }
 ]

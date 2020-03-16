@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <navigation/>
+    <navigation />
     <router-view></router-view>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Navigation from './components/includes/Navigation.vue';
-import Footer from './components/includes/Footer.vue';
+import Navigation from "./components/includes/Navigation.vue";
+import Footer from "./components/includes/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Navigation,
     Footer
   }
-}
+};
 </script>
 
 <style>
